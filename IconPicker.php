@@ -9,14 +9,15 @@ use yii\widgets\InputWidget;
 use dominus77\iconpicker\assets\IconPickerAsset;
 
 /**
- * This is just an example.
+ * Class IconPicker
+ * @package dominus77\iconpicker
  */
 class IconPicker extends InputWidget
 {
     /**
      * Options plugin
      * @var array
-     * @see https://github.com/cosmicdreams/fontawesome-iconpicker
+     * @see https://itsjavi.com/fontawesome-iconpicker/
      */
     public $clientOptions = [];
 

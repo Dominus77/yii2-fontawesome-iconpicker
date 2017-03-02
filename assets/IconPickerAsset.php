@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class IconPickerAsset extends AssetBundle
 {
-    public static $tinyPublishPath = '@vendor/cosmicdreams/fontawesome-iconpicker/dist';
+    public static $tinyPublishPath = '@dominus77/iconpicker/assets/src';
 
     public $sourcePath;
 

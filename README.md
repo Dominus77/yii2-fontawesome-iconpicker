@@ -1,6 +1,6 @@
 README
 ======
-Renders a [Font Awesome Icon Picker plugin for Twitter Bootstrap](https://github.com/cosmicdreams/fontawesome-iconpicker) widget for Yii2.
+Renders a [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
 
 Installation
 ------------
@@ -74,7 +74,7 @@ Client Options:
 ```
 Further Information
 -----
-Please, check the [Font Awesome Icon Picker plugin for Twitter Bootstrap](https://github.com/cosmicdreams/fontawesome-iconpicker)
+Please, check the [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/)
 License
 -----
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
