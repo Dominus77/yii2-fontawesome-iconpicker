@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class IconPickerAsset extends AssetBundle
 {
-    public static $tinyPublishPath = '@dominus77/iconpicker/assets/src';
+    public static $publishPath = '@dominus77/iconpicker/assets/src';
 
     public $sourcePath;
 
@@ -20,7 +20,7 @@ class IconPickerAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = self::$tinyPublishPath;
+        $this->sourcePath = self::$publishPath;
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/fontawesome-iconpicker' . $min . '.css';
         $this->js[] = 'js/fontawesome-iconpicker' . $min . '.js';
@@ -28,5 +28,7 @@ class IconPickerAsset extends AssetBundle
 
     public $depends = [
         'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
+        'dominus77\iconpicker\assets\FontAwesomeAsset'
     ];
 }
