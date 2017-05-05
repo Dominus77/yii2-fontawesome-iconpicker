@@ -27,7 +27,7 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
+```
 <?php
 ...
 use dominus77\iconpicker\IconPicker;
@@ -39,7 +39,7 @@ use dominus77\iconpicker\IconPicker;
 ```
 
 Client Options:
-```php
+```
 <?= $form->field($model, 'icon')->widget(IconPicker::className(), [
     'clientOptions' => [
         'title' => 'Font Awesome Icon', // Popover title (optional) only if specified in the template
