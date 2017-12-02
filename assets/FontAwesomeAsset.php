@@ -19,7 +19,7 @@ class FontAwesomeAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath = self::$publishPath;
+        $this->sourcePath = __DIR__ . '/src';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css = [
             'css/font-awesome' . $min . '.css'

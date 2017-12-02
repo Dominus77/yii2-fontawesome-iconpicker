@@ -23,11 +23,12 @@ class IconPickerAsset extends AssetBundle
         $this->sourcePath = __DIR__ . '/src';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/fontawesome-iconpicker' . $min . '.css';
+        $this->js[] = 'js/jquery-migrate-3.0.0.js';
         $this->js[] = 'js/fontawesome-iconpicker' . $min . '.js';
     }
 
     public $depends = [
-        'yii\web\YiiAsset',
+        'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
         'dominus77\iconpicker\assets\FontAwesomeAsset'
     ];
