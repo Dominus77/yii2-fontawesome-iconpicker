@@ -1,6 +1,6 @@
 README
 ======
-Renders a [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
+Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
 
 Installation
 ------------
@@ -74,7 +74,7 @@ Client Options:
 ```
 Further Information
 -----
-Please, check the [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/)
+Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontawesome-iconpicker)
 
 License
 -----

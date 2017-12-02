@@ -1,17 +1,15 @@
 <?php
 
-namespace dominus77\iconpicker\assets;
+namespace dominus77\iconpicker;
 
 use yii\web\AssetBundle;
 
 /**
  * Class IconPickerAsset
- * @package dominus77\iconpicker\assets
+ * @package dominus77\iconpicker
  */
 class IconPickerAsset extends AssetBundle
 {
-    public static $publishPath = '@vendor/dominus77/iconpicker/assets/src';
-
     public $sourcePath;
 
     public $css = [];
@@ -20,16 +18,15 @@ class IconPickerAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/src';
+        $this->sourcePath = '@bower/fontawesome-iconpicker/dist';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css[] = 'css/fontawesome-iconpicker' . $min . '.css';
-        $this->js[] = 'js/jquery-migrate-3.0.0.js';
         $this->js[] = 'js/fontawesome-iconpicker' . $min . '.js';
     }
 
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
-        'dominus77\iconpicker\assets\FontAwesomeAsset'
+        'dominus77\iconpicker\FontAwesomeAsset'
     ];
 }

@@ -6,7 +6,6 @@ use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
-use dominus77\iconpicker\assets\IconPickerAsset;
 
 /**
  * Class IconPicker

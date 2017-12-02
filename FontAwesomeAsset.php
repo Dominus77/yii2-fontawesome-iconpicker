@@ -1,17 +1,15 @@
 <?php
 
-namespace dominus77\iconpicker\assets;
+namespace dominus77\iconpicker;
 
 use yii\web\AssetBundle;
 
 /**
  * Class FontAwesomeAsset
- * @package dominus77\iconpicker\assets
+ * @package dominus77\iconpicker
  */
 class FontAwesomeAsset extends AssetBundle
 {
-    public static $publishPath = '@vendor/fortawesome/font-awesome';
-
     public $sourcePath;
 
     public $css;
@@ -19,7 +17,7 @@ class FontAwesomeAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath = __DIR__ . '/src';
+        $this->sourcePath = '@vendor/fortawesome/font-awesome';
         $min = YII_ENV_DEV ? '' : '.min';
         $this->css = [
             'css/font-awesome' . $min . '.css'
