@@ -16,7 +16,7 @@ class IconPicker extends InputWidget
     /**
      * Options plugin
      * @var array
-     * @see https://itsjavi.com/fontawesome-iconpicker/
+     * @see https://farbelous.github.io/fontawesome-iconpicker/
      */
     public $clientOptions = [];
 
