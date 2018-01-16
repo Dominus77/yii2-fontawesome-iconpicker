@@ -1,9 +1,7 @@
-README
-======
+# README
 Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -21,9 +19,7 @@ or add
 
 to the require section of your `composer.json` file.
 
-
-Usage
------
+## Usage
 
 Once the extension is installed, simply use it in your code by  :
 
@@ -72,10 +68,8 @@ Client Options:
     ],
 ]); ?>
 ```
-Further Information
------
+## Further Information
 Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontawesome-iconpicker)
 
-License
------
+## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.

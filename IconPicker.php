@@ -20,6 +20,9 @@ class IconPicker extends InputWidget
      */
     public $clientOptions = [];
 
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         if ($this->hasModel()) {
