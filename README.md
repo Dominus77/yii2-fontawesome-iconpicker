@@ -1,7 +1,7 @@
 # yii2-fontawesome-iconpicker
 
 [![Latest Stable Version](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/v/stable)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
-[![License](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/license)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
+[![License](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/license)](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/downloads)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
 
 Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
