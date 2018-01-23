@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Font Awesome Icon Picker">
+        <testsuite name="Yii2 Font Awesome Icon Picker widget Test Suite">
             <directory>./tests/functional</directory>
         </testsuite>
     </testsuites>
