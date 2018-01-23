@@ -3,7 +3,7 @@
     "description": "Font Awesome Icon Picker plugin for Twitter Bootstrap widget for Yii2.",
     "type": "yii2-extension",
     "keywords": ["dominus77","yii2","extension","widget","bootstrap","popover","iconpicker","fontawesome"],
-    "license": "BSD-3",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Alexey Schevchenko",
