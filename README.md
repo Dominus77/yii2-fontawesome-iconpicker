@@ -6,6 +6,7 @@
 [![codecov](https://codecov.io/gh/Dominus77/yii2-fontawesome-iconpicker/branch/master/graph/badge.svg)](https://codecov.io/gh/Dominus77/yii2-fontawesome-iconpicker)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/downloads)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49/mini.png)](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49)
 
 Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
 
@@ -81,3 +82,6 @@ Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontaw
 
 ## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
+
+## Sensio Labs
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49/big.png)](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49)
