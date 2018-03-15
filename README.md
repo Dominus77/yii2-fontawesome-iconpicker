@@ -6,6 +6,7 @@
 [![codecov](https://codecov.io/gh/Dominus77/yii2-fontawesome-iconpicker/branch/master/graph/badge.svg)](https://codecov.io/gh/Dominus77/yii2-fontawesome-iconpicker)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/downloads)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
+[![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LPMLJD7QMLJYG "Donate once-off to this project using Paypal")
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49/mini.png)](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49)
 
 Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
