@@ -7,7 +7,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/downloads)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LPMLJD7QMLJYG "Donate once-off to this project using Paypal")
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/2396d327-016e-4cc4-9640-d2e10661f5d3/mini.png)](https://insight.sensiolabs.com/projects/2396d327-016e-4cc4-9640-d2e10661f5d3)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/mini.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
 
 Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
 
@@ -85,4 +85,4 @@ Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontaw
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
 
 ## Sensio Labs
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/2396d327-016e-4cc4-9640-d2e10661f5d3/big.png)](https://insight.sensiolabs.com/projects/2396d327-016e-4cc4-9640-d2e10661f5d3)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/big.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
