@@ -82,7 +82,7 @@ Client Options:
 Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontawesome-iconpicker)
 
 ## License
-The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
 
 ## Sensio Labs
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49/big.png)](https://insight.sensiolabs.com/projects/50af82af-5a56-44ab-993b-18e4a993ad49)

@@ -2,7 +2,6 @@
 
 namespace dominus77\iconpicker;
 
-use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
