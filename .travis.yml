@@ -1,28 +1,37 @@
+dist: trusty
 language: php
 
 php:
   - 7.0
   - 7.1
+  - 7.2
+  - 7.4
 
-install:
-  - composer self-update
-  - composer install
+# This triggers builds to run on the new TravisCI infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+# Cache composer
+cache:
+  directories:
+    - $HOME/.composer/cache
 
 before_install:
   - sudo pip install codecov
 
 before_script:
-  - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source --dev
-  - composer install --dev
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
 
 script:
-  - phpunit --coverage-text --coverage-clover=coverage.clover
-  - phpunit --coverage-clover=coverage.xml
+  - vendor/bin/phpcs --standard=psr2 src/
+  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+  - |
+    if [[ "$TRAVIS_PHP_VERSION" != 'hhvm' && "$TRAVIS_PHP_VERSION" != '7.0' ]]; then
+      wget https://scrutinizer-ci.com/ocular.phar
+      php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+    fi
 
 after_success:
   - codecov
