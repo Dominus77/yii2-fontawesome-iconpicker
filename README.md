@@ -9,7 +9,7 @@
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LPMLJD7QMLJYG "Donate once-off to this project using Paypal")
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/mini.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
 
-Renders a [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
+Renders a [Font Awesome v5 Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
 
 ## Installation
 
@@ -78,6 +78,25 @@ Client Options:
     ],
 ]); ?>
 ```
+
+## Code Sniffer
+Check Style
+```
+composer check-style
+```
+Fix Style
+```
+composer fix-style
+```
+
+## Testing
+```
+composer test
+```
+
+## Resources
+- [Font Awesome](https://fontawesome.com/)
+- [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/)
 
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
