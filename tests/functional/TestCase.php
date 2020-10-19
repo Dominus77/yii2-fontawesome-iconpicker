@@ -1,9 +1,13 @@
 <?php
 
-namespace tests;
+namespace functional;
 
+use Yii;
 use yii\helpers\ArrayHelper;
 use yii\web\View;
+use yii\web\Application;
+use yii\web\Request;
+use yii\web\Response;
 
 /**
  * Class TestCase
@@ -22,12 +26,12 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
             [
                 'components' => [
                     'request' => [
-                        'class' => 'yii\web\Request',
+                        'class' => Request::class,
                         'url' => '/test',
                         'enableCsrfValidation' => false,
                     ],
                     'response' => [
-                        'class' => 'yii\web\Response',
+                        'class' => Response::class,
                     ],
                 ],
             ]
@@ -48,7 +52,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      * @param array $config
      * @param string $appClass
      */
-    protected function mockApplication($config = [], $appClass = '\yii\console\Application')
+    protected function mockApplication($config = [], $appClass = \yii\console\Application::class)
     {
         new $appClass(
             ArrayHelper::merge(
@@ -66,7 +70,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      * @param array $config
      * @param string $appClass
      */
-    protected function mockWebApplication($config = [], $appClass = '\yii\web\Application')
+    protected function mockWebApplication($config = [], $appClass = Application::class)
     {
         new $appClass(
             ArrayHelper::merge(
@@ -85,8 +89,8 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
                             'scriptUrl' => '/index.php',
                         ],
                         'assetManager' => [
-                            'class' => 'tests\AssetManager',
-                            'basePath' => '@tests/assets',
+                            'class' => AssetManager::class,
+                            'basePath' => '@tests/functional/assets',
                             'baseUrl' => '/',
                         ]
                     ]
@@ -101,7 +105,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      */
     protected function getVendorPath()
     {
-        //return dirname(dirname(dirname(dirname(__DIR__)))) . '/yii2-developer.loc/vendor';
         return dirname(dirname(__DIR__)) . '/vendor';
     }
 
@@ -110,7 +113,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      */
     protected function destroyApplication()
     {
-        \Yii::$app = null;
+        Yii::$app = null;
     }
 
     /**
@@ -124,7 +127,7 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
         $view->setAssetManager(
             new AssetManager(
                 [
-                    'basePath' => '@tests/assets',
+                    'basePath' => '@tests/functional/assets',
                     'baseUrl' => '/',
                 ]
             )
@@ -142,6 +145,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
     {
         $expected = str_replace("\r\n", "\n", $expected);
         $actual = str_replace("\r\n", "\n", $actual);
-        $this->assertEquals($expected, $actual);
+        self::assertEquals($expected, $actual);
     }
 }

@@ -16,9 +16,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <file>./FontAwesomeAsset.php</file>
-            <file>./IconPickerAsset.php</file>
-            <file>./IconPicker.php</file>
+            <directory suffix=".php">./src/</directory>
         </whitelist>
     </filter>
     <logging>

@@ -1,46 +1,31 @@
 <?php
 
-namespace tests;
+namespace functional;
 
-use tests\models\Post;
+use functional\models\Demo;
 use dominus77\iconpicker\IconPicker;
-use yii\widgets\ActiveForm;
 
 /**
  * Class IconPickerTest
- * @package tests
+ * @package functional
  */
 class IconPickerTest extends TestCase
 {
-    /**
-     * @inheritdoc
-     */
     public function testIconPickerWidget()
     {
-        $model = new Post();
+        $model = new Demo();
         $widget = IconPicker::widget([
             'name' => 'icon',
             'model' => $model,
         ]);
-        $this->assertContains('', $widget);
+        self::assertContains('', $widget);
     }
 
-    /**
-     * @inheritdoc
-     */
     public function testIconPickerForm()
     {
-        $model = new Post();
-        $form = ActiveForm::begin();
-        $field = $form->field($model, 'icon')->widget(IconPicker::className(), [
-            'options' => [
-                'class' => 'form-control icp'
-            ],
-            'clientOptions' => [
-                'title' => 'Font Awesome Icon'
-            ]
-        ]);
-        ActiveForm::end();
-        $this->assertEquals($field->attribute, 'icon');
+        $model = new Demo();
+        $view = $this->getView();
+        $content = $view->renderFile('@functional/views/form.php', ['model' => $model]);
+        self::assertContains('<input type="text" id="demo-icon" class="form-control icp" name="Demo[icon]">', $content);
     }
 }

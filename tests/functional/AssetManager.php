@@ -1,23 +1,26 @@
 <?php
 
-namespace tests;
+namespace functional;
+
+use yii\web\AssetManager as BaseAssetManager;
 
 /**
  * Class AssetManager
- * @package tests
+ * @package functional
  */
-class AssetManager extends \yii\web\AssetManager
+class AssetManager extends BaseAssetManager
 {
-    private $_hashes = [];
-    private $_counter = 0;
+    private $hashes = [];
+    private $counter = 0;
 
     /**
      * @inheritdoc
      */
-    public function hash($path) {
+    public function hash($path)
+    {
         if (!isset($this->_hashes[$path])) {
-            $this->_hashes[$path] = $this->_counter++;
+            $this->hashes[$path] = $this->counter++;
         }
-        return $this->_hashes[$path];
+        return $this->hashes[$path];
     }
 }

@@ -9,7 +9,7 @@
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LPMLJD7QMLJYG "Donate once-off to this project using Paypal")
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/mini.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
 
-Renders a [Font Awesome Icon Picker](https://farbelous.github.io/fontawesome-iconpicker/) widget for Yii2.
+Renders a [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
 
 ## Installation
 
@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require dominus77/yii2-fontawesome-iconpicker "*"
+php composer.phar require dominus77/yii2-fontawesome-iconpicker "^3.0"
 ```
 
 or add
 
 ```
-"dominus77/yii2-fontawesome-iconpicker": "*"
+"dominus77/yii2-fontawesome-iconpicker": "^3.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -40,13 +40,13 @@ use dominus77\iconpicker\IconPicker;
 ...
 ?>
 
-<?= $form->field($model, 'icon')->widget(IconPicker::className(), []); ?>
+<?= $form->field($model, 'icon')->widget(IconPicker::class, []); ?>
 
 ```
 
 Client Options:
 ```
-<?= $form->field($model, 'icon')->widget(IconPicker::className(), [
+<?= $form->field($model, 'icon')->widget(IconPicker::class, [
     'clientOptions' => [
         'title' => 'Font Awesome Icon', // Popover title (optional) only if specified in the template
         'selected' => false, // use this value as the current item and ignore the original
@@ -61,7 +61,7 @@ Client Options:
         'mustAccept' => false, // only applicable when there's an iconpicker-btn-accept button in the popover footer
         'selectedCustomClass' => 'bg-primary', // Appends this class when to the selected item
         //'icons' => [], // list of icon classes (declared at the bottom of this script for maintainability)
-        'fullClassFormatter' => new \yii\web\JsExpression("function(val){return 'fa ' + val;}"),
+        'fullClassFormatter' => new \yii\web\JsExpression("function(val){return val;}"),
         'input' => 'input,.iconpicker-input', // children input selector
         'inputSearch' => false, // use the input as a search box too?
         'container' => false, //  Appends the popover to a specific element. If not set, the selected element or element parent is used
@@ -78,8 +78,6 @@ Client Options:
     ],
 ]); ?>
 ```
-## Further Information
-Please, check the [Font Awesome Icon Picker](https://github.com/farbelous/fontawesome-iconpicker)
 
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
