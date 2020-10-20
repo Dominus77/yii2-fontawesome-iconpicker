@@ -11,6 +11,10 @@
 
 Renders a [Font Awesome v5 Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
 
+
+## Note
+> If you want to support font avesome version 4 then use widget version 2
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
