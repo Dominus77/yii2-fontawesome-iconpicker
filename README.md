@@ -7,7 +7,8 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-fontawesome-iconpicker/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-fontawesome-iconpicker/downloads)](https://packagist.org/packages/dominus77/yii2-fontawesome-iconpicker)
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LPMLJD7QMLJYG "Donate once-off to this project using Paypal")
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/mini.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
+[![SymfonyInsight](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7/mini.svg)](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7)
+
 
 Renders a [Font Awesome v5 Icon Picker](https://itsjavi.com/fontawesome-iconpicker/) widget for Yii2.
 
@@ -44,7 +45,7 @@ use dominus77\iconpicker\IconPicker;
 ...
 ?>
 
-<?= $form->field($model, 'icon')->widget(IconPicker::class, []); ?>
+<?= $form->field($model, 'icon')->widget(IconPicker::class, []) ?>
 
 ```
 
@@ -80,7 +81,7 @@ Client Options:
             'iconpickerItem' => '<a role="button" href="#" class="iconpicker-item"><i></i></a>',
         ],
     ],
-]); ?>
+]) ?>
 ```
 
 ## Code Sniffer
@@ -106,4 +107,4 @@ composer test
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-fontawesome-iconpicker/blob/master/LICENSE.md) for more information.
 
 ## Sensio Labs
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85/big.png)](https://insight.sensiolabs.com/projects/056b7d4e-da1d-42bd-9f18-9381ffa7ad85)
+[![SymfonyInsight](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7/big.svg)](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7)
