@@ -20,8 +20,7 @@ before_install:
   - sudo pip install codecov
 
 before_script:
-  - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source --dev
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
