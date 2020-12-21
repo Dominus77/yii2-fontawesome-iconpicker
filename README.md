@@ -98,6 +98,7 @@ composer fix-style
 ```
 composer test
 ```
+
 ## Resources
 - [Font Awesome](https://fontawesome.com/)
 - [Font Awesome Icon Picker](https://itsjavi.com/fontawesome-iconpicker/)
