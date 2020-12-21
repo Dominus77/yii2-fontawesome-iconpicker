@@ -17,6 +17,7 @@ cache:
     - $HOME/.composer/cache
 
 before_install:
+  - sudo apt-get -y install git zip php-cli php-curl
   - sudo pip install codecov
 
 before_script:
