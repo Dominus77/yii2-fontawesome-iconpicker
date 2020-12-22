@@ -17,12 +17,9 @@ cache:
     - $HOME/.composer/cache
 
 before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install libxml2-dev
   - sudo pip install codecov
-  - composer self-update --rollback
-  - |
-    if [["$TRAVIS_PHP_VERSION" == '7.2']]; then
-      composer self-update
-    fi
 
 before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
