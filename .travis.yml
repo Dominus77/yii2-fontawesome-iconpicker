@@ -21,7 +21,7 @@ before_install:
 
 before_script:
 #  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
-  - travis_retry composer self-update ${COMPOSER_FLAGS} --rollback
+  - composer self-update --rollback
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
